@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fancy Form</title>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css file: style-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- js file-->
+    <script defer src="./script.js"></script>
+
+
+
+    <!-- bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google api font -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins">
+
+  </head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo-name">Fancy Form</a>
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid p-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="#login">Login</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                 <li class="nav-item me-2">
+                  <a class="nav-link" href="#help">Help</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+              <form class=" search d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form> 
+                
+    </header>
+
+
+    <!-- contact section starts-->
+    <section class="details" id="details">
+      
+      <h3 class="heading">Please fill in your details for the transaction:</h3>
+
+      <div class="row">
+        
+        <form onsubmit="return !1">
+          <input type="number" name="number" placeholder="ETH Address" class="box">
+          <input type="text" name="name" placeholder="Amount to send" class="box">
+          <input type="email" name="email" placeholder="OTP Authentication" class="box">
+          <input type="submit" value="SEND TOKEN" class="btn" onclick="showAlert()">
+            <div class="content">
+            <h3>Terms and Conditions:</h3>
+            <p >1. A very small transaction fee will be added by the Ethereum network, covering the cost of verifying Ethereum transactions. </p>
+            <p>2. Ethereum transactions are final. Once you initiate an Ethereum transaction, you cannot cancel it </p>
+            <p>3. Transactions are complete once confirmed. Once an Ethereum transaction is submitted to the Bitcoin network, it will be unconfirmed for a period of time (usually about an hour, but sometimes longer) pending full verification of the transaction by the Ethereum network. A transaction is not complete until it is fully verified. </p>
+          </div>
+        </form>
+
+
+
+        <div class="image">
+          <img src="./images/ethereum.png">
+        </div>
+
+
+      </div>
+
+
+    </section>
+    <!-- contact section ends-->
+
+
+    <!-- footer section starts-->
+    <section class="footer">
+      
+      <div class="box-container">
+        
+        <div class="credit">
+          @2023-2023 Fancy Form All Rights Reserved
+        </div>
+      </div>
+    </section>
+    <!-- footer section ends-->
+
+    <!-- bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  
+
+  </body>
+</html>
